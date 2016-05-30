@@ -5,9 +5,13 @@
 
 // TODO name there using function, not appearance
 @light: #ABB2BF;
-@red: #e06870;
+@red: #ea5e68;
 @purple: #b77fdb;
 @orange: #D19A66;
+
+@gutter-text: #767676;
+@cursor: #528BFF;
+@selection: #0050a0;
 
 /* General */
 
@@ -20,8 +24,31 @@ span.cm-variable-3	{ color: #64B6C3; }
 span.cm-comment		{ color: #667689; }
 span.cm-error		{ color: @red; }
 
+.cm-atom, .cm-string, .cm-string-2, .cm-hr { color: #d89333; }
+.cm-number, .cm-attribute, .cm-plus { color: #85a300; }
+.cm-def, .cm-property { color: #b77fdb; }
+.cm-variable,
+.cm-variable-3,
+.cm-operator,
+.cm-meta,
+.cm-bracket {
+    color: @foreground;
+}
+.cm-variable-2 {
+    // among other things, this is the vairbale type in less
+    color: @red;
+}
+.cm-comment { color: #767676; }
+.cm-error, .cm-minus { color: #dc322f; }
+.cm-header { color: #d85896; }
+.cm-rangeinfo { color: #6c71c4; }
+.cm-qualifier, .cm-builtin, .cm-tag, .cm-quote { color: #6c9ef8; }
+.cm-keyword {
+    color: @purple;
+}
+
 /* CSS, LESS */
-.cm-m-css.cm-tag { color: #D86C74; }
+.cm-m-css.cm-tag { color: @red; }
 .cm-m-css.cm-property { color: @light; }
 .cm-m-css.cm-number { color: @orange; }
 .cm-m-css.cm-atom { color: #64B6C3; }
@@ -57,7 +84,6 @@ span.cm-error		{ color: @red; }
 .cm-m-clike.cm-builtin { color: #6CAFF2; }
 
 /* Code Styling */
-
 .CodeMirror, .CodeMirror-scroll {
     background-color: @background;
     color: @foreground;
@@ -81,31 +107,6 @@ span.cm-error		{ color: @red; }
     }
 }
 
-.cm-atom, .cm-string, .cm-string-2, .cm-hr { color: #d89333; }
-.cm-number, .cm-attribute, .cm-plus { color: #85a300; }
-.cm-def, .cm-property { color: #b77fdb; }
-.cm-variable,
-.cm-variable-3,
-.cm-operator,
-.cm-meta,
-.cm-bracket {
-    color: @foreground;
-}
-.cm-variable-2 {
-    // among other things, this is the vairbale type in less
-    color: @red;
-}
-.cm-comment { color: #767676; }
-.cm-error, .cm-minus { color: #dc322f; }
-.cm-header { color: #d85896; }
-.cm-rangeinfo { color: #6c71c4; }
-.cm-qualifier, .cm-builtin, .cm-tag, .cm-quote { color: #6c9ef8; }
-.cm-keyword {
-    color: @purple;
-}
-
-/* Extra CSS */
-
 .CodeMirror-searching {
     background-color: #d3cd69;
 
@@ -115,7 +116,7 @@ span.cm-error		{ color: @red; }
 }
 
 .CodeMirror-cursor {
-    border-left: 1px solid #528BFF !important;
+    border-left: 1px solid @cursor !important;
 }
 
 .CodeMirror-gutters {
@@ -124,24 +125,24 @@ span.cm-error		{ color: @red; }
 }
 
 .CodeMirror-linenumber {
-    color: #767676;
+    color: @gutter-text;
 }
 
 .CodeMirror .CodeMirror-selected {
-    background: desaturate(fadeout(#0050a0, 50), 80);
+    background: desaturate(fadeout(@selection, 50), 80);
 }
 .CodeMirror-focused .CodeMirror-selected {
-    background: fadeout(#0050a0, 50);
+    background: fadeout(@selection, 50);
 }
 
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
     /* Ensure visibility against gray inline editor background */
-    background-color: #2e5c00;
+    background-color: fadeout(@foreground, 70);
     color: @foreground !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
-    border-bottom: 1px solid #528BFF !important;
+    border-bottom: 1px solid @cursor !important;
     border-left: none !important;
 }
 
@@ -192,9 +193,9 @@ span.cm-error		{ color: @red; }
 }
 
 .CodeMirror-foldmarker {
-    border-color: #000;
-    color: #ccc;
-    background-color: #444;
+    border-color: fadeout(@foreground, 80);
+    color: @foreground;
+    background-color: @background;
 }
 
 /* Non-editor styling */
