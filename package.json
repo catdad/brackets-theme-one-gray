@@ -1,0 +1,26 @@
+{
+  "name": "catdad.one-gray",
+  "title": "One Gray",
+  "description": "A Brackets theme based on Atom's 'One Dark', but matching the gray style of Brackets.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kiril Vatev <vatev.1@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catdad/brackets-theme-one-gray.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catdad/brackets-theme-one-gray/issues"
+  },
+  "homepage": "https://github.com/catdad/brackets-theme-one-gray#readme",
+  "theme": {
+    "file": "main.css",
+    "dark": true,
+    "addModeClass": true
+  },
+  "keywords": ["theme", "dark", "Brackets", "One Dark", "One Gray"]
+}
