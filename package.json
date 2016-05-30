@@ -5,7 +5,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "lessc --lint main.less"
   },
   "author": "Kiril Vatev <vatev.1@gmail.com>",
   "license": "ISC",
@@ -22,5 +23,14 @@
     "dark": true,
     "addModeClass": true
   },
-  "keywords": ["theme", "dark", "Brackets", "One Dark", "One Gray"]
+  "keywords": [
+    "theme",
+    "dark",
+    "Brackets",
+    "One Dark",
+    "One Gray"
+  ],
+  "devDependencies": {
+    "less": "^2.7.1"
+  }
 }
