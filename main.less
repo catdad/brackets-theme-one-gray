@@ -1,30 +1,36 @@
 /* Define some variables used in multiple places */
 //@background: #1d1f21;
 @background: #2d2e30;
-@foreground: #ddd;
+@foreground: #e5e5e5;
 
 // TODO name there using function, not appearance
-@light: #ABB2BF;
+@light: @foreground;
+@medium: darken(@foreground, 35);
 @red: #ea5e68;
-@purple: #b77fdb;
+@purple: #C678DD;
 @orange: #D19A66;
+@blue: #6CAFF2;
 
-@gutter-text: #767676;
+@gutter-text: @medium;
 @cursor: #528BFF;
 @selection: #0050a0;
+@string: #98C379;
+
+@atom: #64B6C3;
 
 /* General */
 
 span.cm-header      { color: @light; }
 span.cm-variable	{ color: @light; }
 span.cm-link		{ color: @purple; }
-span.cm-string-2    { color: #98C379; }
+span.cm-string-2    { color: @string; }
 span.cm-meta		{ color: @light; }
-span.cm-variable-3	{ color: #64B6C3; }
-span.cm-comment		{ color: #667689; }
+span.cm-variable-3	{ color: @atom; }
+span.cm-comment		{ color: @medium; }
 span.cm-error		{ color: @red; }
 
-.cm-atom, .cm-string, .cm-string-2, .cm-hr { color: #d89333; }
+.cm-atom { color: @atom; }
+.cm-string, .cm-string-2, .cm-hr { color: #d89333; }
 .cm-number, .cm-attribute, .cm-plus { color: #85a300; }
 .cm-def, .cm-property { color: #b77fdb; }
 .cm-variable,
@@ -35,10 +41,10 @@ span.cm-error		{ color: @red; }
     color: @foreground;
 }
 .cm-variable-2 {
-    // among other things, this is the vairbale type in less
+    // among other things, this is the varibale type in less
     color: @red;
 }
-.cm-comment { color: #767676; }
+.cm-comment { color: @medium; }
 .cm-error, .cm-minus { color: #dc322f; }
 .cm-header { color: #d85896; }
 .cm-rangeinfo { color: #6c71c4; }
@@ -51,35 +57,36 @@ span.cm-error		{ color: @red; }
 .cm-m-css.cm-tag { color: @red; }
 .cm-m-css.cm-property { color: @light; }
 .cm-m-css.cm-number { color: @orange; }
-.cm-m-css.cm-atom { color: #64B6C3; }
-.cm-m-css.cm-string { color: #98C379; }
+.cm-m-css.cm-atom { color: @atom; }
+.cm-m-css.cm-string { color: @string; }
 .cm-m-css.cm-builtin { color: #6CAFF2; }
-.cm-m-css.cm-qualifier { color: #CD9A61; }
+.cm-m-css.cm-qualifier { color: @orange; }
 
 /* HTML, XML */
 .cm-m-xml.cm-tag.cm-bracket { color: @light; }
 .cm-m-xml.cm-tag { color: #D86C74; }
 .cm-m-xml.cm-attribute { color: @orange; }
-.cm-m-xml.cm-string { color: #98C379; }
+.cm-m-xml.cm-string { color: @string; }
 
 /* Javascript */
-.cm-m-javascript.cm-keyword { color: #D86C74; }
-.cm-m-javascript.cm-def { color: #6CAFF2; }
+.cm-m-javascript.cm-keyword { color: @purple; }
+.cm-m-javascript.cm-def { color: @blue; }
 .cm-m-javascript.cm-operator { color: @light; }
-.cm-m-javascript.cm-string { color: #98C379; }
+.cm-m-javascript.cm-string { color: @string; }
 .cm-m-javascript.cm-number { color: @orange; }
-.cm-m-javascript.cm-variable-2 { color: #C678DD; }
+.cm-m-javascript.cm-variable { color: @blue; }
+.cm-m-javascript.cm-variable-2 { color: @purple; }
 .cm-m-javascript.cm-property { color: @light; }
-.cm-m-javascript.cm-atom { color: #64B6C3; }
+.cm-m-javascript.cm-atom { color: @atom; }
 .cm-m-javascript.cm-string.cm-property { color: @red }
 
 /* PHP */
-.cm-m-clike.cm-keyword { color: #C678DD; }
+.cm-m-clike.cm-keyword { color: @purple; }
 .cm-m-clike.cm-def { color: @orange; }
 .cm-m-clike.cm-variable-2 { color: #D86C74; }
 .cm-m-clike.cm-operator { color: @light; }
-.cm-m-clike.cm-string { color: #98C379; }
-.cm-m-clike.cm-atom { color: #64B6C3; }
+.cm-m-clike.cm-string { color: @string; }
+.cm-m-clike.cm-atom { color: @atom; }
 .cm-m-clike.cm-number { color: @orange; }
 .cm-m-clike.cm-builtin { color: #6CAFF2; }
 
@@ -90,7 +97,7 @@ span.cm-error		{ color: @red; }
 }
 
 .CodeMirror-focused .CodeMirror-activeline-background {
-    background: #2f2f2f;
+//    background: #2f2f2f;
 }
 
 .show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
@@ -103,7 +110,7 @@ span.cm-error		{ color: @red; }
         color: #fff;
     }
     .inline-widget .CodeMirror-gutter-elt {
-        color: #767676;
+        color: @medium;
     }
 }
 
@@ -147,8 +154,6 @@ span.cm-error		{ color: @red; }
 }
 
 .CodeMirror {
-    line-height: 1.4;
-
     .CodeMirror {
         background: transparent;
     }
@@ -164,7 +169,7 @@ span.cm-error		{ color: @red; }
 
     .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
         background: transparent;
-        color: #767676;
+        color: @medium;
     }
 
     .CodeMirror-focused .CodeMirror-activeline-background {
@@ -180,15 +185,15 @@ span.cm-error		{ color: @red; }
 }
 
 .CodeMirror-foldgutter-open:after {
-    color: #666;
+    color: @gutter-text;
 }
 .CodeMirror-foldgutter-folded:after {
-    color: #aaa;
+    color: @gutter-text;
 }
 
 .CodeMirror.over-gutter, .CodeMirror-activeline {
     .CodeMirror-foldgutter-open:after {
-        color: #888;
+        color: @gutter-text;
     }
 }
 
