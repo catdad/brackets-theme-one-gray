@@ -82,15 +82,27 @@
 
 /* Javascript */
 .cm-m-javascript {
+    
+    @js-atom: @orange;
+    
+    @global-var: @blue;
+    @func-scope-var: @red;
+    
+    // function, this, return, etc.
     &.cm-keyword { color: @purple; }
-    &.cm-def { color: @blue; }
+    // vars declared in function declaration
+    &.cm-def { color: @func-scope-var; }
+    // +, -, =, ||, &&, etc.
     &.cm-operator { color: @light; }
     &.cm-string { color: @string; }
-    &.cm-number { color: @orange; }
-    &.cm-variable { color: @blue; }
-    &.cm-variable-2 { color: @purple; }
+    &.cm-number { color: @js-atom; }
+    // this seems to be varibles declared outside of the function scope
+    &.cm-variable { color: @global-var; }
+    // this seems to be variables local to a function
+    &.cm-variable-2 { color: @func-scope-var; }
     &.cm-property { color: @light; }
-    &.cm-atom { color: @atom; }
+    &.cm-atom { color: @js-atom; }
+    
     &.cm-string.cm-property { color: @red }
 }
 
