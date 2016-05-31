@@ -1,25 +1,25 @@
 /* Define some variables used in multiple places */
-//@background: #1d1f21;
-@background: #2d2e30;
+@background: #1d1f21;
+//@background: #2d2e30;
 @foreground: #eee;
 
 // TODO name there using function, not appearance
 @light: @foreground;
 @medium: darken(@foreground, 40);
 @red: #e04e4e;
-@purple: #C678DD;
+@purple: #c678dd;
 @orange: #d89333;
-@blue: #6CAFF2;
+@blue: #6caff2;
 @yellow: #e6cb32;
 @pink: #e06ea5;
 
 @comment: @medium;
 @gutter-text: @medium;
-@cursor: #528BFF;
+@cursor: #528bff;
 @selection: #0050a0;
 @string: #7fbc52;
 
-@atom: #64B6C3;
+@atom: #64b6c3;
 @keyword: @purple;
 
 /* General */
@@ -173,13 +173,13 @@
 }
 
 .show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
-    box-shadow: inset 15px 0 0 0 #000;
+    box-shadow: inset 15px 0 0 0 #000000;
 }
 
 .CodeMirror-focused .CodeMirror-activeline {
     .CodeMirror-gutter-elt {
         background: rgba(0, 0, 0, 0.2);
-        color: #fff;
+        color: #ffffff;
     }
     .inline-widget .CodeMirror-gutter-elt {
         color: @gutter-text;
@@ -200,7 +200,7 @@
 
 .CodeMirror-gutters {
     background-color: @background;
-    border-right: none;
+    border-right: 0;
 }
 
 .CodeMirror-linenumber {
@@ -214,7 +214,8 @@
     background: fadeout(@selection, 50);
 }
 
-.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
     @color: @cursor;
     
     /* Ensure visibility against gray inline editor background */
@@ -225,7 +226,7 @@
 
 .CodeMirror-overwrite .CodeMirror-cursor {
     border-bottom: 1px solid @cursor !important;
-    border-left: none !important;
+    border-left: 0 !important;
 }
 
 .CodeMirror {
@@ -235,7 +236,7 @@
 
     .CodeMirror .CodeMirror-gutters {
         background: transparent;
-        border-right: none;
+        border-right: 0;
     }
 
     .CodeMirror .CodeMirror-activeline-background {
@@ -256,7 +257,7 @@
     .CodeMirror-focused .CodeMirror-activeline {
         .CodeMirror-gutter-elt {
             background: rgba(0, 0, 0, 0.2);
-            color: #fff;
+            color: #ffffff;
         }
     }
 }
@@ -268,16 +269,17 @@
     color: @gutter-text;
 }
 
-.CodeMirror.over-gutter, .CodeMirror-activeline {
+.CodeMirror.over-gutter,
+.CodeMirror-activeline {
     .CodeMirror-foldgutter-open:after {
         color: @gutter-text;
     }
 }
 
 .CodeMirror-foldmarker {
+    background-color: @background;
     border-color: fadeout(@foreground, 80);
     color: @foreground;
-    background-color: @background;
 }
 
 /* Non-editor styling */
