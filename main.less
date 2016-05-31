@@ -11,6 +11,7 @@
 @orange: #d89333;
 @blue: #6CAFF2;
 
+@comment: @medium;
 @gutter-text: @medium;
 @cursor: #528BFF;
 @selection: #0050a0;
@@ -36,9 +37,9 @@
 .cm-string      { color: @string; }
 .cm-string-2    { color: @orange; }
 
-.cm-meta		{ color: @light; }
+.cm-meta		{ color: #e06ea5; }
 
-.cm-comment		{ color: @medium; }
+.cm-comment		{ color: @comment; }
 .cm-error		{ color: @red; }
 
 .cm-atom        { color: @atom; }
@@ -125,7 +126,7 @@
         color: #fff;
     }
     .inline-widget .CodeMirror-gutter-elt {
-        color: @medium;
+        color: @gutter-text;
     }
 }
 
@@ -184,7 +185,7 @@
 
     .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
         background: transparent;
-        color: @medium;
+        color: @gutter-text;
     }
 
     .CodeMirror-focused .CodeMirror-activeline-background {
