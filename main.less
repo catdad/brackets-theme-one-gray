@@ -20,6 +20,7 @@
 @string: #7fbc52;
 
 @atom: #64B6C3;
+@keyword: @purple;
 
 /* General */
 
@@ -61,7 +62,9 @@
 .cm-builtin     { color: @orange; }
 .cm-tag         { color: @blue; }
 .cm-quote       { color: @blue; }
-.cm-keyword     { color: @purple; }
+
+// function, this, return, etc.
+.cm-keyword     { color: @keyword; }
 
 /* CSS, LESS */
 .cm-m-css {
@@ -69,7 +72,6 @@
     &.cm-property { color: @light; }
     &.cm-number { color: @orange; }
     &.cm-atom { color: @atom; }
-    &.cm-string { color: @string; }
     &.cm-builtin { color: @blue; }
     &.cm-qualifier { color: @orange; }
 }
@@ -79,7 +81,6 @@
     &.cm-tag.cm-bracket { color: @light; }
     &.cm-tag { color: @red; }
     &.cm-attribute { color: @orange; }
-    &.cm-string { color: @string; }
 }
 
 /* Javascript */
@@ -92,8 +93,6 @@
     @func-scope-var: @light;
     @prop: @yellow;
     
-    // function, this, return, etc.
-    &.cm-keyword { color: @purple; }
     // vars declared in function declaration
     &.cm-def { color: @func-scope-var; }
     // +, -, =, ||, &&, etc.
@@ -106,18 +105,16 @@
     &.cm-string.cm-property { color: @red }
     
     &.cm-atom { color: @js-atom; }
-    &.cm-string { color: @string; }
     &.cm-number { color: @js-atom; }
     
 }
 
-/* PHP */
+/* C, PHP */
 .cm-m-clike {
-    &.cm-keyword { color: @purple; }
     &.cm-def { color: @orange; }
     &.cm-variable-2 { color: @red; }
+    &.cm-variable-3 { color: @blue; }
     &.cm-operator { color: @light; }
-    &.cm-string { color: @string; }
     &.cm-atom { color: @atom; }
     &.cm-number { color: @orange; }
     &.cm-builtin { color: @blue; }
