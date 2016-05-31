@@ -83,6 +83,7 @@
     &.cm-attribute { color: @orange; }
 }
 
+/* Shell */
 .cm-m-shell {
     &.cm-attribute { color: @light }
     &.cm-def { color: @red }
@@ -138,6 +139,19 @@
     
     &.cm-tag { color: @red; }
     &.cm-link { color: @blue; }
+}
+
+/* Ruby */
+.cm-m-ruby {
+    @rb-atom: @orange;
+    
+    // this is the only one I have seen so far that uses vairable-3
+    &.cm-variable-3 { color: @red; }
+    
+    &.cm-property { color: @light; }
+    &.cm-atom { color: @rb-atom; }
+    &.cm-tag { color: @rb-atom; }
+    &.cm-string-2 { color: @atom; }
 }
 
 /* Code Styling */
