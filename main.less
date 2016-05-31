@@ -87,6 +87,7 @@
     
     @global-var: @blue;
     @func-scope-var: @red;
+    @prop: @light;
     
     // function, this, return, etc.
     &.cm-keyword { color: @purple; }
@@ -94,16 +95,17 @@
     &.cm-def { color: @func-scope-var; }
     // +, -, =, ||, &&, etc.
     &.cm-operator { color: @light; }
-    &.cm-string { color: @string; }
-    &.cm-number { color: @js-atom; }
     // this seems to be varibles declared outside of the function scope
     &.cm-variable { color: @global-var; }
     // this seems to be variables local to a function
     &.cm-variable-2 { color: @func-scope-var; }
-    &.cm-property { color: @light; }
-    &.cm-atom { color: @js-atom; }
-    
+    &.cm-property { color: @prop; }
     &.cm-string.cm-property { color: @red }
+    
+    &.cm-atom { color: @js-atom; }
+    &.cm-string { color: @string; }
+    &.cm-number { color: @js-atom; }
+    
 }
 
 /* PHP */
