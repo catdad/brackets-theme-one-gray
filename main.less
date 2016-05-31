@@ -28,7 +28,7 @@
 .cm-header      { color: @pink; }
 
 // TODO what are these? what colors should they be?
-.cm-variable	{ color: @blue; }
+.cm-variable	{ color: @light; }
 // among other things, this is the varibale type in less
 .cm-variable-2  { color: @red; }
 .cm-variable-3	{ color: @atom; }
@@ -49,7 +49,7 @@
 .cm-attribute   { color: @string; }
 .cm-plus        { color: @string; }
 .cm-minus       { color: @red; }
-.cm-def         { color: @purple; }
+.cm-def         { color: @blue; }
 .cm-property    { color: @purple; }
 .cm-hr          { color: @orange; }
 
@@ -58,7 +58,7 @@
 
 .cm-rangeinfo   { color: #6c71c4; }
 .cm-qualifier   { color: @blue; }
-.cm-builtin     { color: @blue; }
+.cm-builtin     { color: @orange; }
 .cm-tag         { color: @blue; }
 .cm-quote       { color: @blue; }
 .cm-keyword     { color: @purple; }
@@ -91,7 +91,6 @@
     @global-var: @blue;
     @func-scope-var: @light;
     @prop: @yellow;
-//    @prop: #e5ba68;
     
     // function, this, return, etc.
     &.cm-keyword { color: @purple; }
@@ -122,6 +121,21 @@
     &.cm-atom { color: @atom; }
     &.cm-number { color: @orange; }
     &.cm-builtin { color: @blue; }
+}
+
+/* Markdown */
+.cm-m-markdown {
+    &.cm-strong {
+        color: @orange;
+        font-weight: bold;
+    }
+    &.cm-em {
+        color: @purple;
+        font-style: italic;
+    }
+    
+    &.cm-tag { color: @red; }
+    &.cm-link { color: @blue; }
 }
 
 /* Code Styling */
