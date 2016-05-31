@@ -1,6 +1,6 @@
 /* Define some variables used in multiple places */
-@background: #1d1f21;
-//@background: #2d2e30;
+//@background: #1d1f21;
+@background: #2d2e30;
 @foreground: #eee;
 
 // TODO name there using function, not appearance
@@ -32,8 +32,7 @@
 .cm-variable	{ color: @light; }
 // among other things, this is the varibale type in less
 .cm-variable-2  { color: @red; }
-.cm-variable-3	{ color: @atom; }
-.cm-variable-3  { color: @foreground; }
+.cm-variable-3	{ color: @blue; }
 
 .cm-link		{ color: @purple; }
 
@@ -132,7 +131,6 @@
 .cm-m-clike {
     &.cm-def { color: @orange; }
     &.cm-variable-2 { color: @red; }
-    &.cm-variable-3 { color: @blue; }
     &.cm-operator { color: @light; }
     &.cm-atom { color: @atom; }
     &.cm-number { color: @orange; }
@@ -157,10 +155,7 @@
 /* Ruby */
 .cm-m-ruby {
     @rb-atom: @orange;
-    
-    // this is the only one I have seen so far that uses vairable-3
-    &.cm-variable-3 { color: @red; }
-    
+
     &.cm-property { color: @light; }
     &.cm-atom { color: @rb-atom; }
     &.cm-tag { color: @rb-atom; }
