@@ -112,10 +112,23 @@
     
     &.cm-atom { color: @js-atom; }
     &.cm-number { color: @js-atom; }
-    
 }
 
-/* C, PHP */
+/* CoffeeScript, bleh */
+.cm-m-coffeescript {
+    @js-atom: @orange;
+    
+    &.cm-variable { color: @light; }
+    &.cm-property { color: @blue; }
+    
+    &.cm-operator { color: @yellow; }
+    &.cm-punctuation { color: @light; }
+    
+    &.cm-atom { color: @js-atom; }
+    &.cm-number { color: @js-atom; }
+}
+
+/* C, PHP, Scala */
 .cm-m-clike {
     &.cm-def { color: @orange; }
     &.cm-variable-2 { color: @red; }
