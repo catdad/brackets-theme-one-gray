@@ -5,8 +5,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "lessc --lint main.less"
+    "test": "lessc --lint main.less"
   },
   "author": "Kiril Vatev <vatev.1@gmail.com>",
   "license": "ISC",
@@ -31,6 +30,10 @@
     "One Gray"
   ],
   "devDependencies": {
-    "less": "^2.7.1"
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-zip": "^3.2.0",
+    "less": "^2.7.1",
+    "lesshint": "^2.0.0-rc"
   }
 }
