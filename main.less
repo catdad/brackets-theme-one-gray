@@ -20,75 +20,90 @@
 
 /* General */
 
-span.cm-header      { color: @light; }
-span.cm-variable	{ color: @light; }
-span.cm-link		{ color: @purple; }
-span.cm-string-2    { color: @string; }
-span.cm-meta		{ color: @light; }
-span.cm-variable-3	{ color: @atom; }
-span.cm-comment		{ color: @medium; }
-span.cm-error		{ color: @red; }
+// TODO
+.cm-header      { color: @light; }
+.cm-header      { color: #d85896; }
 
-.cm-atom { color: @atom; }
-.cm-string, .cm-string-2, .cm-hr { color: @orange; }
-.cm-number, .cm-attribute, .cm-plus { color: @string; }
-.cm-def, .cm-property { color: @purple; }
-.cm-variable,
-.cm-variable-3,
-.cm-operator,
-.cm-meta,
-.cm-bracket {
-    color: @foreground;
-}
-.cm-variable-2 {
-    // among other things, this is the varibale type in less
-    color: @red;
-}
-.cm-comment { color: @medium; }
-.cm-error, .cm-minus { color: @red; }
-.cm-header { color: #d85896; }
-.cm-rangeinfo { color: #6c71c4; }
-.cm-qualifier, .cm-builtin, .cm-tag, .cm-quote { color: @blue; }
-.cm-keyword {
-    color: @purple;
-}
+// TODO what are these? what colors should they be?
+.cm-variable	{ color: @blue; }
+// among other things, this is the varibale type in less
+.cm-variable-2  { color: @red; }
+.cm-variable-3	{ color: @atom; }
+.cm-variable-3  { color: @foreground; }
+
+.cm-link		{ color: @purple; }
+
+.cm-string      { color: @string; }
+.cm-string-2    { color: @orange; }
+
+.cm-meta		{ color: @light; }
+
+.cm-comment		{ color: @medium; }
+.cm-error		{ color: @red; }
+
+.cm-atom        { color: @atom; }
+.cm-number      { color: @string; }
+.cm-attribute   { color: @string; }
+.cm-plus        { color: @string; }
+.cm-minus       { color: @red; }
+.cm-def         { color: @purple; }
+.cm-property    { color: @purple; }
+.cm-hr          { color: @orange; }
+
+.cm-operator    { color: @foreground; }
+.cm-bracket     { color: @foreground; }
+
+.cm-rangeinfo   { color: #6c71c4; }
+.cm-qualifier   { color: @blue; }
+.cm-builtin     { color: @blue; }
+.cm-tag         { color: @blue; }
+.cm-quote       { color: @blue; }
+.cm-keyword     { color: @purple; }
 
 /* CSS, LESS */
-.cm-m-css.cm-tag { color: @red; }
-.cm-m-css.cm-property { color: @light; }
-.cm-m-css.cm-number { color: @orange; }
-.cm-m-css.cm-atom { color: @atom; }
-.cm-m-css.cm-string { color: @string; }
-.cm-m-css.cm-builtin { color: @blue; }
-.cm-m-css.cm-qualifier { color: @orange; }
+.cm-m-css {
+    &.cm-tag { color: @red; }
+    &.cm-property { color: @light; }
+    &.cm-number { color: @orange; }
+    &.cm-atom { color: @atom; }
+    &.cm-string { color: @string; }
+    &.cm-builtin { color: @blue; }
+    &.cm-qualifier { color: @orange; }
+}
 
 /* HTML, XML */
-.cm-m-xml.cm-tag.cm-bracket { color: @light; }
-.cm-m-xml.cm-tag { color: @red; }
-.cm-m-xml.cm-attribute { color: @orange; }
-.cm-m-xml.cm-string { color: @string; }
+.cm-m-xml {
+    &.cm-tag.cm-bracket { color: @light; }
+    &.cm-tag { color: @red; }
+    &.cm-attribute { color: @orange; }
+    &.cm-string { color: @string; }
+}
 
 /* Javascript */
-.cm-m-javascript.cm-keyword { color: @purple; }
-.cm-m-javascript.cm-def { color: @blue; }
-.cm-m-javascript.cm-operator { color: @light; }
-.cm-m-javascript.cm-string { color: @string; }
-.cm-m-javascript.cm-number { color: @orange; }
-.cm-m-javascript.cm-variable { color: @blue; }
-.cm-m-javascript.cm-variable-2 { color: @purple; }
-.cm-m-javascript.cm-property { color: @light; }
-.cm-m-javascript.cm-atom { color: @atom; }
-.cm-m-javascript.cm-string.cm-property { color: @red }
+.cm-m-javascript {
+    &.cm-keyword { color: @purple; }
+    &.cm-def { color: @blue; }
+    &.cm-operator { color: @light; }
+    &.cm-string { color: @string; }
+    &.cm-number { color: @orange; }
+    &.cm-variable { color: @blue; }
+    &.cm-variable-2 { color: @purple; }
+    &.cm-property { color: @light; }
+    &.cm-atom { color: @atom; }
+    &.cm-string.cm-property { color: @red }
+}
 
 /* PHP */
-.cm-m-clike.cm-keyword { color: @purple; }
-.cm-m-clike.cm-def { color: @orange; }
-.cm-m-clike.cm-variable-2 { color: @red; }
-.cm-m-clike.cm-operator { color: @light; }
-.cm-m-clike.cm-string { color: @string; }
-.cm-m-clike.cm-atom { color: @atom; }
-.cm-m-clike.cm-number { color: @orange; }
-.cm-m-clike.cm-builtin { color: @blue; }
+.cm-m-clike {
+    &.cm-keyword { color: @purple; }
+    &.cm-def { color: @orange; }
+    &.cm-variable-2 { color: @red; }
+    &.cm-operator { color: @light; }
+    &.cm-string { color: @string; }
+    &.cm-atom { color: @atom; }
+    &.cm-number { color: @orange; }
+    &.cm-builtin { color: @blue; }
+}
 
 /* Code Styling */
 .CodeMirror, .CodeMirror-scroll {
