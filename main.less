@@ -10,6 +10,8 @@
 @purple: #C678DD;
 @orange: #d89333;
 @blue: #6CAFF2;
+@yellow: #e6cb32;
+@pink: #e06ea5;
 
 @comment: @medium;
 @gutter-text: @medium;
@@ -23,7 +25,7 @@
 
 // TODO
 .cm-header      { color: @light; }
-.cm-header      { color: #d85896; }
+.cm-header      { color: @pink; }
 
 // TODO what are these? what colors should they be?
 .cm-variable	{ color: @blue; }
@@ -37,7 +39,7 @@
 .cm-string      { color: @string; }
 .cm-string-2    { color: @orange; }
 
-.cm-meta		{ color: #e06ea5; }
+.cm-meta		{ color: @pink; }
 
 .cm-comment		{ color: @comment; }
 .cm-error		{ color: @red; }
@@ -84,17 +86,19 @@
 .cm-m-javascript {
     
     @js-atom: @orange;
+    @js-operator: @light; // @atom;
     
     @global-var: @blue;
-    @func-scope-var: @red;
-    @prop: @light;
+    @func-scope-var: @light;
+    @prop: @yellow;
+//    @prop: #e5ba68;
     
     // function, this, return, etc.
     &.cm-keyword { color: @purple; }
     // vars declared in function declaration
     &.cm-def { color: @func-scope-var; }
     // +, -, =, ||, &&, etc.
-    &.cm-operator { color: @light; }
+    &.cm-operator { color: @js-operator; }
     // this seems to be varibles declared outside of the function scope
     &.cm-variable { color: @global-var; }
     // this seems to be variables local to a function
@@ -173,9 +177,12 @@
 }
 
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+    @color: @cursor;
+    
     /* Ensure visibility against gray inline editor background */
-    background-color: fadeout(@foreground, 70);
-    color: @foreground !important;
+    background-color: fadeout(@color, 60);
+    border-bottom: 1px solid @color;
+    color: @light !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
