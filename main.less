@@ -1,20 +1,20 @@
 /* Define some variables used in multiple places */
-//@background: #1d1f21;
-@background: #2d2e30;
+@background: #1d1f21;
+//@background: #2d2e30;
 @foreground: #eee;
 
 // TODO name there using function, not appearance
 @light: @foreground;
-@medium: darken(@foreground, 30);
-@red: #ea5e68;
+@medium: darken(@foreground, 40);
+@red: #e04e4e;
 @purple: #C678DD;
-@orange: #D19A66;
+@orange: #d89333;
 @blue: #6CAFF2;
 
 @gutter-text: @medium;
 @cursor: #528BFF;
 @selection: #0050a0;
-@string: #98C379;
+@string: #7fbc52;
 
 @atom: #64B6C3;
 
@@ -30,8 +30,8 @@ span.cm-comment		{ color: @medium; }
 span.cm-error		{ color: @red; }
 
 .cm-atom { color: @atom; }
-.cm-string, .cm-string-2, .cm-hr { color: #d89333; }
-.cm-number, .cm-attribute, .cm-plus { color: #85a300; }
+.cm-string, .cm-string-2, .cm-hr { color: @orange; }
+.cm-number, .cm-attribute, .cm-plus { color: @string; }
 .cm-def, .cm-property { color: @purple; }
 .cm-variable,
 .cm-variable-3,
@@ -45,7 +45,7 @@ span.cm-error		{ color: @red; }
     color: @red;
 }
 .cm-comment { color: @medium; }
-.cm-error, .cm-minus { color: #dc322f; }
+.cm-error, .cm-minus { color: @red; }
 .cm-header { color: #d85896; }
 .cm-rangeinfo { color: #6c71c4; }
 .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote { color: @blue; }
@@ -173,9 +173,11 @@ span.cm-error		{ color: @red; }
     }
 
     .CodeMirror-focused .CodeMirror-activeline-background {
+        // TODO what is this?
         background: #2f2f2f;
     }
 
+    // TODO this rule already exists above, use as mixin instead
     .CodeMirror-focused .CodeMirror-activeline {
         .CodeMirror-gutter-elt {
             background: rgba(0, 0, 0, 0.2);
