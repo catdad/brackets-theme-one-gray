@@ -1,0 +1,14 @@
+string: "string"
+plaint: plain
+number: 5
+
+# does this work
+atom: null
+
+array:
+    - thing
+    - another thing
+    - "thing that is a string"
+    
+object.with.props: value
+object.with.keys: key value
