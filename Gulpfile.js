@@ -1,8 +1,12 @@
 /* jshint node: true */
 
+var fs = require('fs');
+
 var gulp = require('gulp');
 var del = require('del');
 var zip = require('gulp-zip');
+
+var Lesshint = require('lesshint');
 
 var pkg = require('./package.json');
 
@@ -27,19 +31,17 @@ gulp.task('zip', ['clean'], function() {
 
 gulp.task('build', ['zip']);
 
-
-// Doesn't actually work, docsk are wrong
-
-//var fs = require('fs');
-//var Lesshint = require('lesshint');
-
-//gulp.task('lint', function() {
-//    var hint = new Lesshint();
-//    
-//    var lessStr = fs.readFileSync(lesssrc, 'utf8');
-//    
-//    var reporter = hint.getReporter();
-//    var errors = hint.checkString(lessStr);
-//    
-//    reporter.report(errors);
-//});
+// still doesn't work well, but actually works
+gulp.task('lint', function() {
+    var hint = new Lesshint();
+    // without calling this, there are no errors...
+    // not sure why that is, but I found it in the source
+    hint.configure({ excludedFiles: [] });
+    
+    var lessStr = fs.readFileSync(lesssrc, 'utf8');
+    
+    var reporter = hint.getReporter();
+    var errors = hint.checkString(lessStr);
+    
+    reporter.report(errors);
+});
