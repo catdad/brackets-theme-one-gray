@@ -22,7 +22,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('zip', ['clean'], function() {
-    var filename = 'catdad.one-gray.v' + pkg.version + '.zip';
+    var filename = pkg.name + '.v' + pkg.version + '.zip';
     
     return gulp.src(source)
         .pipe(zip(filename))
