@@ -1,6 +1,7 @@
 /* jshint node: true */
 
 var fs = require('fs');
+var util = require('util');
 
 var gulp = require('gulp');
 var del = require('del');
@@ -22,7 +23,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('zip', ['clean'], function() {
-    var filename = pkg.name + '.v' + pkg.version + '.zip';
+    var filename = util.format('%s.zip', pkg.name);
     
     return gulp.src(source)
         .pipe(zip(filename))
