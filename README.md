@@ -6,43 +6,43 @@ A colorful theme based on Atom's One Dark, while still matching Brackets' overal
 
 ### JavaScript
 
-![javascript](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/javascript.png)
+![javascript](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/javascript.png)
 
 ### JSON
 
-![json](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/javascript.png)
+![json](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/javascript.png)
 
 ### HTML
 
-![html](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/html.png)
+![html](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/html.png)
 
 ### Markdown
 
-![markdown](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/markdown.png)
+![markdown](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/markdown.png)
 
 ### PHP
 
-![php](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/php.png)
+![php](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/php.png)
 
 ### Python
 
-![python](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/python.png)
+![python](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/python.png)
 
 ### Ruby
 
-![ruby](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/ruby.png)
+![ruby](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/ruby.png)
 
 ### Scala
 
-![scala](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/scala.png)
+![scala](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/scala.png)
 
 ### Yaml
 
-![yaml](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/yaml.png)
+![yaml](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/yaml.png)
 
 ### Bash
 
-![bash](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/bash.png)
+![bash](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/bash.png)
 
 ## Issues
 
