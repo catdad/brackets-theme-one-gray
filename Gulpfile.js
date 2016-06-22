@@ -6,6 +6,8 @@ var util = require('util');
 var gulp = require('gulp');
 var del = require('del');
 var zip = require('gulp-zip');
+var jimp = require('gulp-jimp');
+var imagemin = require('gulp-imagemin');
 
 var Lesshint = require('lesshint');
 
@@ -28,6 +30,15 @@ gulp.task('zip', ['clean'], function() {
     return gulp.src(source)
         .pipe(zip(filename))
         .pipe(gulp.dest(dest));
+});
+
+gulp.task('img', function() {
+    return gulp.src('art/*')
+        .pipe(jimp({
+            '': { resize: { width: 1000, mode: 'bezierInterpolation' } }
+        }))
+		.pipe(imagemin())
+		.pipe(gulp.dest('images'));
 });
 
 gulp.task('build', ['zip']);
