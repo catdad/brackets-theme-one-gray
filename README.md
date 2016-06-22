@@ -10,7 +10,7 @@ A colorful theme based on Atom's One Dark, while still matching Brackets' overal
 
 ### JSON
 
-![javascript](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/javascript.png)
+![json](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/javascript.png)
 
 ### HTML
 
