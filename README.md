@@ -6,43 +6,43 @@ A colorful theme based on Atom's One Dark, while still matching Brackets' overal
 
 ### JavaScript
 
-![javascript](images/javascript.png)
+![javascript](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/javascript.png)
 
 ### JSON
 
-![javascript](images/javascript.png)
+![javascript](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/javascript.png)
 
 ### HTML
 
-![html](images/html.png)
+![html](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/html.png)
 
 ### Markdown
 
-![markdown](images/markdown.png)
+![markdown](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/markdown.png)
 
 ### PHP
 
-![php](images/php.png)
+![php](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/php.png)
 
 ### Python
 
-![python](images/python.png)
+![python](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/python.png)
 
 ### Ruby
 
-![ruby](images/ruby.png)
+![ruby](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/ruby.png)
 
 ### Scala
 
-![scala](images/scala.png)
+![scala](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/scala.png)
 
 ### Yaml
 
-![yaml](images/yaml.png)
+![yaml](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/yaml.png)
 
 ### Bash
 
-![bash](images/bash.png)
+![bash](https://raw.githubusercontent.com/catdad/brackets-theme-one-gray/master/images/bash.png)
 
 ## Issues
 
