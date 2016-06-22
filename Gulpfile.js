@@ -34,9 +34,9 @@ gulp.task('zip', ['clean'], function() {
 
 gulp.task('img', function() {
     return gulp.src('art/*')
-        .pipe(jimp({
-            '': { resize: { width: 1000, mode: 'bezierInterpolation' } }
-        }))
+//        .pipe(jimp({
+//            '': { resize: { width: 1000, mode: 'bezierInterpolation' } }
+//        }))
 		.pipe(imagemin())
 		.pipe(gulp.dest('images'));
 });
