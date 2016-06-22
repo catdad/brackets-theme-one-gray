@@ -6,25 +6,43 @@ A colorful theme based on Atom's One Dark, while still matching Brackets' overal
 
 ### JavaScript
 
+![javascript](images/javascript.png)
+
 ### JSON
+
+![javascript](images/javascript.png)
 
 ### HTML
 
-### CSS
+![html](images/html.png)
 
 ### Markdown
 
+![markdown](images/markdown.png)
+
 ### PHP
+
+![php](images/php.png)
 
 ### Python
 
+![python](images/python.png)
+
 ### Ruby
+
+![ruby](images/ruby.png)
 
 ### Scala
 
+![scala](images/scala.png)
+
 ### Yaml
 
+![yaml](images/yaml.png)
+
 ### Bash
+
+![bash](images/bash.png)
 
 ## Issues
 
