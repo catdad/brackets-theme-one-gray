@@ -90,14 +90,14 @@
 
 /* Javascript */
 .cm-m-javascript {
-    
+
     @js-atom: @orange;
     @js-operator: @light; // @atom;
-    
+
     @global-var: @blue;
     @func-scope-var: @light;
     @prop: @yellow;
-    
+
     // vars declared in function declaration
     &.cm-def { color: @func-scope-var; }
     // +, -, =, ||, &&, etc.
@@ -108,7 +108,7 @@
     &.cm-variable-2 { color: @func-scope-var; }
     &.cm-property { color: @prop; }
     &.cm-string.cm-property { color: @red; }
-    
+
     &.cm-atom { color: @js-atom; }
     &.cm-number { color: @js-atom; }
 }
@@ -116,13 +116,13 @@
 /* CoffeeScript, bleh */
 .cm-m-coffeescript {
     @js-atom: @orange;
-    
+
     &.cm-variable { color: @light; }
     &.cm-property { color: @blue; }
-    
+
     &.cm-operator { color: @yellow; }
     &.cm-punctuation { color: @light; }
-    
+
     &.cm-atom { color: @js-atom; }
     &.cm-number { color: @js-atom; }
 }
@@ -147,7 +147,7 @@
         color: @purple;
         font-style: italic;
     }
-    
+
     &.cm-tag { color: @red; }
     &.cm-link { color: @blue; }
 }
@@ -217,7 +217,7 @@
 .CodeMirror-matchingbracket,
 .CodeMirror-matchingtag {
     @color: @cursor;
-    
+
     /* Ensure visibility against gray inline editor background */
     background-color: fadeout(@color, 60);
     border-bottom: 1px solid @color;
