@@ -5,7 +5,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "lessc --lint main.less"
+    "test": "lessc --lint main.less",
+    "stylelint": "stylelint",
+    "lint": "stylelint main.less --syntax less"
   },
   "author": "Kiril Vatev <vatev.1@gmail.com>",
   "license": "ISC",
@@ -36,6 +38,8 @@
     "gulp-jimp": "^1.2.3",
     "gulp-zip": "^3.2.0",
     "less": "^2.7.1",
-    "lesshint": "^2.0.0-rc"
+    "lesshint": "^2.0.0-rc",
+    "stylelint": "^6.7.0",
+    "stylelint-config-standard": "^9.0.0"
   }
 }
