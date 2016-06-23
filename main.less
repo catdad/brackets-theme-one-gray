@@ -1,7 +1,7 @@
 /* Define some variables used in multiple places */
 @background: #1d1f21;
 //@background: #2d2e30;
-@foreground: #eee;
+@foreground: #eeeeee;
 
 // TODO name there using function, not appearance
 @light: @foreground;
@@ -170,7 +170,7 @@
 }
 
 .CodeMirror-focused .CodeMirror-activeline-background {
-//    background: #2f2f2f;
+    // background: #2f2f2f;
 }
 
 .show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
@@ -211,6 +211,7 @@
 .CodeMirror .CodeMirror-selected {
     background: desaturate(fadeout(@selection, 50), 80);
 }
+
 .CodeMirror-focused .CodeMirror-selected {
     background: fadeout(@selection, 50);
 }
@@ -263,17 +264,17 @@
     }
 }
 
-.CodeMirror-foldgutter-open:after {
+.CodeMirror-foldgutter-open::after {
     color: @gutter-text;
 }
 
-.CodeMirror-foldgutter-folded:after {
+.CodeMirror-foldgutter-folded::after {
     color: @gutter-text;
 }
 
 .CodeMirror.over-gutter,
 .CodeMirror-activeline {
-    .CodeMirror-foldgutter-open:after {
+    .CodeMirror-foldgutter-open::after {
         color: @gutter-text;
     }
 }
