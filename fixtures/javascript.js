@@ -13,6 +13,8 @@ SomeClass.prototype.func = function someClassFunc(opts) {
     this.opts = opts;
 };
 
+function someFunc() {}
+
 /**
  * long comment
  * mark this as deprecated
@@ -20,7 +22,7 @@ SomeClass.prototype.func = function someClassFunc(opts) {
 var runTestsArray = util.deprecate(function runTestsArrayDeprecated(options, callback) {
     
     var defaultOpts = {
-        filepath: opts.path,
+        filepath: options.path,
         // set default values
         threads: 1,
         opt: null
@@ -28,7 +30,7 @@ var runTestsArray = util.deprecate(function runTestsArrayDeprecated(options, cal
     
     var testsToRun = options.tests.map(function(opts) {
         return function runSingleTest(done) {
-            forkmaster(
+            someFunc(
                 _.merge(defaultOpts, options),
                 done
             );
