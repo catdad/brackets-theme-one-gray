@@ -196,7 +196,12 @@
 }
 
 .CodeMirror-cursor {
-    border-left: 1px solid @cursor !important;
+    border-left: 1px solid @cursor;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-bottom: 1px solid @cursor;
+    border-left: 0;
 }
 
 .CodeMirror-gutters {
@@ -224,11 +229,6 @@
     background-color: fadeout(@color, 60);
     border-bottom: 1px solid @color;
     color: @light !important;
-}
-
-.CodeMirror-overwrite .CodeMirror-cursor {
-    border-bottom: 1px solid @cursor !important;
-    border-left: 0 !important;
 }
 
 .CodeMirror {
