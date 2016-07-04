@@ -1,0 +1,21 @@
+.using-class {
+    background: url(https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg);
+    color: #bada55;
+}
+
+#using-id {
+    background-color: red;
+}
+
+tagname {
+    padding: 5px;
+}
+
+tagname::after {
+    content: 'things';
+    border-radius: 30px/12px;
+}
+
+#using-id .using-class tagname {
+    transition: translate 300ms ease;
+}
