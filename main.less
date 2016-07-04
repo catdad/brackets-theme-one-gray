@@ -3,23 +3,27 @@
 //@background: #2d2e30;
 @foreground: #eeeeee;
 
+@darkblue: #0050a0;
+
 // TODO name there using function, not appearance
 @light: @foreground;
 @medium: darken(@foreground, 40);
 @red: #e04e4e;
-@purple: #c678dd;
 @orange: #d89333;
-@blue: #6caff2;
 @yellow: #e6cb32;
+@green: #7fbc52;
+@teal: #64b6c3;
+@blue: lighten(@darkblue, 40);
+@purple: #c678dd;
 @pink: #e06ea5;
 
 @comment: @medium;
 @gutter-text: @medium;
-@cursor: #528bff;
-@selection: #0050a0;
-@string: #7fbc52;
+@selection: @darkblue;
+@cursor: lighten(@selection, 30);
+@string: @green;
 
-@atom: #64b6c3;
+@atom: @teal;
 @keyword: @purple;
 
 /* General */
