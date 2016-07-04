@@ -10,7 +10,7 @@ A colorful theme based on Atom's One Dark, while still matching Brackets' overal
 
 ### JSON
 
-![json](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/javascript.png)
+![json](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/json.png)
 
 ### HTML
 
