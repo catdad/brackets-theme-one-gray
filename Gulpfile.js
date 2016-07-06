@@ -57,3 +57,7 @@ gulp.task('lint', function() {
     
     reporter.report(errors);
 });
+
+gulp.task('default', ['lint'], function() {
+    return gulp.start('build');
+});
