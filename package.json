@@ -2,7 +2,7 @@
   "name": "catdad.one-gray",
   "title": "One Gray",
   "description": "A Brackets theme based on Atom's 'One Dark', but matching the gray style of Brackets.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "lessc --lint main.less",
