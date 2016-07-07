@@ -9,7 +9,6 @@ var zip = require('gulp-zip');
 var jimp = require('gulp-jimp');
 var imagemin = require('gulp-imagemin');
 
-var Lesshint = require('lesshint');
 var stylelint = require('gulp-stylelint');
 
 var pkg = require('./package.json');
