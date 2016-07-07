@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "lessc --lint main.less",
-    "stylelint": "stylelint",
     "lint": "stylelint main.less --syntax less",
+    "stylelint": "stylelint",
     "less": "lessc"
   },
   "author": "Kiril Vatev <vatev.1@gmail.com>",

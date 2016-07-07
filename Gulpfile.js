@@ -41,10 +41,6 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('images'));
 });
 
-gulp.task('build', ['lint', 'clean'], function() {
-    return gulp.start('zip');
-});
-
 // still doesn't work well, but actually works
 gulp.task('lint', function() {
     return gulp.src(lesssrc)
@@ -57,6 +53,10 @@ gulp.task('lint', function() {
             ],
             syntax: 'less'
         }));
+});
+
+gulp.task('build', ['lint', 'clean'], function() {
+    return gulp.start('zip');
 });
 
 gulp.task('default', ['build']);
