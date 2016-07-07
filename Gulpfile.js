@@ -10,6 +10,7 @@ var jimp = require('gulp-jimp');
 var imagemin = require('gulp-imagemin');
 
 var Lesshint = require('lesshint');
+var stylelint = require('gulp-stylelint');
 
 var pkg = require('./package.json');
 
@@ -45,17 +46,16 @@ gulp.task('build', ['zip']);
 
 // still doesn't work well, but actually works
 gulp.task('lint', function() {
-    var hint = new Lesshint();
-    // without calling this, there are no errors...
-    // not sure why that is, but I found it in the source
-    hint.configure({ excludedFiles: [] });
-    
-    var lessStr = fs.readFileSync(lesssrc, 'utf8');
-    
-    var reporter = hint.getReporter();
-    var errors = hint.checkString(lessStr);
-    
-    reporter.report(errors);
+    return gulp.src(lesssrc)
+        .pipe(stylelint({
+            reporters: [
+                {
+                    formatter: 'string',
+                    console: true
+                }
+            ],
+            syntax: 'less'
+        }));
 });
 
 gulp.task('default', ['lint'], function() {
