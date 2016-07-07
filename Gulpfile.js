@@ -24,7 +24,7 @@ gulp.task('clean', function() {
     return del(dest);
 });
 
-gulp.task('zip', ['clean'], function() {
+gulp.task('zip', function() {
     var filename = util.format('%s.zip', pkg.name);
     
     return gulp.src(source)
@@ -41,7 +41,9 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('images'));
 });
 
-gulp.task('build', ['zip']);
+gulp.task('build', ['lint', 'clean'], function() {
+    return gulp.start('zip');
+});
 
 // still doesn't work well, but actually works
 gulp.task('lint', function() {
@@ -57,6 +59,4 @@ gulp.task('lint', function() {
         }));
 });
 
-gulp.task('default', ['lint'], function() {
-    return gulp.start('build');
-});
+gulp.task('default', ['build']);
