@@ -61,12 +61,10 @@ gulp.task('errors', function(done) {
 gulp.task('lint', function() {
     return gulp.src(lesssrc)
         .pipe(stylelint({
-            reporters: [
-                {
-                    formatter: 'string',
-                    console: true
-                }
-            ],
+            reporters: [{
+                formatter: 'string',
+                console: true
+            }],
             syntax: 'less'
         }));
 });
