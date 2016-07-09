@@ -40,8 +40,8 @@ gulp.task('img', function() {
 //        .pipe(jimp({
 //            '': { resize: { width: 1000, mode: 'bezierInterpolation' } }
 //        }))
-		.pipe(imagemin())
-		.pipe(gulp.dest('images'));
+        .pipe(imagemin())
+        .pipe(gulp.dest('images'));
 });
 
 gulp.task('errors', function(done) {
