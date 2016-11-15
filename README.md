@@ -6,7 +6,7 @@ A colorful theme based on Atom's One Dark, while still matching Brackets' overal
 
 ### JavaScript
 
-![javascript](http://www.googledrive.com/host/0BzobV6zzoAikQi11bkZfcGUxNmc/javascript.png)
+![javascript](https://cloud.githubusercontent.com/assets/2205537/20327931/5dc88680-ab5d-11e6-995e-d9f48bf06a25.png)
 
 ### JSON
 
