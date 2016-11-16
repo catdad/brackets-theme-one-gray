@@ -5,43 +5,33 @@
 A colorful theme based on Atom's One Dark, while still matching Brackets' overall gray tones. It has been hand-tunes for most of the languages supported by Brackets.
 
 ### JavaScript
-
 ![javascript]
 
 ### JSON
-
 ![json]
 
 ### HTML
-
 ![html]
 
 ### Markdown
-
 ![markdown]
 
 ### PHP
-
 ![php]
 
 ### Python
-
 ![python]
 
 ### Ruby
-
 ![ruby]
 
 ### Scala
-
 ![scala]
 
 ### Yaml
-
 ![yaml]
 
 ### Bash
-
 ![bash]
 
 ## Issues
