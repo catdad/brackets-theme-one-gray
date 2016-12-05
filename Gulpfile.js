@@ -9,7 +9,6 @@ var del = require('del');
 var shellton = require('shellton');
 var sequence = require('run-sequence');
 var zip = require('gulp-zip');
-var jimp = require('gulp-jimp');
 var imagemin = require('gulp-imagemin');
 
 var stylelint = require('gulp-stylelint');
@@ -37,9 +36,6 @@ gulp.task('zip', function() {
 
 gulp.task('img', function() {
     return gulp.src('art/*')
-//        .pipe(jimp({
-//            '': { resize: { width: 1000, mode: 'bezierInterpolation' } }
-//        }))
         .pipe(imagemin())
         .pipe(gulp.dest('images'));
 });
