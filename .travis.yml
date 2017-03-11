@@ -1,3 +1,19 @@
 language: node_js
+
 node_js:
-  - "node"
+  - node
+  
+script:
+  - npm test
+  - npm run gulp -- build
+
+deploy:
+  provider: releases
+  api_key:
+    secure: hPtcEc93wnVoMK3cXzegGfLP+pcjFYgjSHKJoZ0NMDn7TyI5cI1MEa+ZBvOnKcEwLo2iKcg1mbco8/+/KLh8Rss4Mykg/w6l0gfjDoKdXqHrvIWBPfGJC2ua4gpManHb8zfSWyYui7BNOoZCL37rWqkZsIycyzvR+Lm5YBqTbmauc1TUafagfw0lp5UVv1aQig0WVyy/TQVpgNEYDQxDDUAo1c/9yK2cAIYrgkLA5R5+zjXPgSKHj2FEzYhkU7ju4gvlbpiAzzUU8ju9WSvqICvowpnMOQZDY0H5Ir/XHAzm98RF6pbVE7rBOsUSo+As7cLfAq3EVzyIafttkJaeEK2+Pa366Qbx3clrC9haVm454DlLIW2tvKPtuVrccgqtINy13T03HpfuqXRCOkd6+JGwK+PFbl1KUggzBi7FaFyKABjH6qTkv2z7/Dh9GLUDCKwkPdwMvjf8Tx1IupoBkk1w/pnBNmvlUMw01EN65oMxit/Gijh0YbkXe9jFwH8kmdTpKJqa+MXj22sWtgVGy0g7S2mCkmGAFkxKP/tGHpmPsE3pPgOy6Xr7pB+IiY5fog3Vl9IjyjOL5EC+OonXfQnEXzrVXfxLtlUZaXpDa1aab8On72+Xa83XGFlWeXHFltwZZMM+LfNaFI5hndDYlfjAZHYv4YzCDijVRv9/5vY=
+  skip_cleanup: true
+  file_glob: true
+  file: 'bin/*.zip'
+  on:
+    tags: true
+    repo: catdad/brackets-theme-one-gray

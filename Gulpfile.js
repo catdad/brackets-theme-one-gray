@@ -26,7 +26,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('zip', function() {
-    var filename = util.format('%s.zip', pkg.name);
+    var filename = util.format('%s-%s.zip', pkg.name, pkg.version);
     
     return gulp.src(source)
         .pipe(zip(filename))

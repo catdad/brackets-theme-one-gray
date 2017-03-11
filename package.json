@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "gulp test",
+    "gulp": "gulp",
     "lint": "stylelint main.less --syntax less",
     "stylelint": "stylelint",
     "less": "lessc"
