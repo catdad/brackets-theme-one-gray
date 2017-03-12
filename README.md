@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/catdad/brackets-theme-one-gray.svg?branch=master)](https://travis-ci.org/catdad/brackets-theme-one-gray)
 
-A colorful theme based on Atom's One Dark, while still matching Brackets' overall gray tones. It has been hand-tunes for most of the languages supported by Brackets.
+A colorful theme based on Atom's One Dark, while still matching Brackets' overall gray tones. It has been hand-tuned for most of the languages supported by Brackets.
 
 ### JavaScript
 ![javascript]
